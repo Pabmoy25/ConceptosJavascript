@@ -33,3 +33,11 @@ alert ("Esta es una prueba de ventana emergente");
 // graba una variable, siempre texto
 let color = prompt ("Ingrese un color");
 console.log (color);
+
+// Solicitario a un usuario un numero, y al numero indicado por el usuario multiplicarlo x 15
+let numeroSeleccionado = parseInt (prompt ("Ingresar un numero de 1 al 100"));
+console.log(numeroSeleccionado);
+console.log(numeroSeleccionado) + 15;
+
+// parseInt ("10") devuelve 10
+// parseFloat ("10,5") devuelve 10.5
