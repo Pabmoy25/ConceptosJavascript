@@ -1,25 +1,37 @@
-// declarar un array vacio
+//declarar un array vacio
 
 const alumnos = [];
 
-// array con valores
+//array con valores
 
-const peliculas = ["Iroman 1", "El rey leon", "Harry Potter", "Blade Runner", 2012, true];
+const peliculas = ['Ironman 1', 'El rey leon', 'harry Potter', 'BladeRunner', 2023, true];
 
-// Mostrar un array
-
-console.log (peliculas);
-document.write (peliculas);
-document.write (`<br>`+ peliculas[0]);
-
-// Cantidad de caracteres en un array
-document.write (`<p>Cantidad de elementos: ${peliculas.length}</p>`);
-document.write (`<p>Ultimo elementos del array: ${peliculas[peliculas.length - 1]}</p>`);
-document.write (`<p>Consulto un elemento del array: ${peliculas[20]}</p>`);
-
-document.write (`<h2>Lista de peliculas</h2>`)
-document.write (`<ul>`)
-for (let i = 0; i < peliculas.length; i++){
-document.write (`<li>${peliculas[i]}</li>`)
+function mostrarPeliculas(titulo){
+    document.write(`<h2>Lista de peliculas ${titulo}</h2>`)
+    document.write(`<ul>`)
+    for(let i = 0; i < peliculas.length; i++){
+        document.write(`<li>${peliculas[i]}</li>`)
+    }
+    document.write(`</ul>`)
 }
-document.write (`</ul>`)
+
+//mostrar un array
+console.log(peliculas);
+document.write(peliculas);
+document.write('<br>'+ peliculas[0]);
+//cantidad de caracteres en un array
+document.write(`<p>Cantidad de elementos: ${peliculas.length}</p>`);
+document.write(`<p>Ultimo elemento del array: ${peliculas[peliculas.length - 1]}</p>`);
+document.write(`<p>Consulto un elemento del array: ${peliculas[20]}</p>`);
+
+mostrarPeliculas('');
+
+//agregar elementos
+peliculas.unshift('El grinch','mi pobre angelito');
+mostrarPeliculas(`+ 2 elementos (${peliculas.length})`);
+
+peliculas.splice(5,0, 'martes 13 🔪');
+mostrarPeliculas(`+ 1 elementos (${peliculas.length})`)
+
+peliculas.push('gladiador');
+mostrarPeliculas(`+ 1 elementos (${peliculas.length})</h2>`)

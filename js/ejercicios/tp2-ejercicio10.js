@@ -9,10 +9,9 @@ document.write(`<table><tbody>`);
 for (let indiceFilas = 0; indiceFilas < columnas; indiceFilas++) {
   document.write(`<tr>`);
   for (let indiceColumnas = 0; indiceColumnas < columnas; indiceColumnas++)
-  document.write(`<td>${totalFilasXColumnas}</td>`);
-totalFilasXColumnas--; // totalFilasXColumnas = totalFilasXColumnas -1
+    document.write(`<td>${totalFilasXColumnas}</td>`);
+  totalFilasXColumnas--; // totalFilasXColumnas = totalFilasXColumnas -1
 
   document.write(`</tr>`);
 }
 document.write(`</tbody></table>`);
-
