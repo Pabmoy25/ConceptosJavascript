@@ -38,5 +38,8 @@ const apellido = prompt('Ingrese su apellido');
 saludoCompleto(nombre, apellido);
 saludoCompleto();
 
+const respuesta = multiplicar(5,3);
 
+document.write(`<p>La respuesta de la funcion que multiplica es ${respuesta}</p>`);
+document.write(`<p>La respuesta de la funcion que multiplica es ${multiplicar(7,3)}</p>`);
 
