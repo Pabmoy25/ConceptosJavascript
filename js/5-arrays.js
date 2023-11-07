@@ -35,3 +35,33 @@ mostrarPeliculas(`+ 1 elementos (${peliculas.length})`)
 
 peliculas.push('gladiador');
 mostrarPeliculas(`+ 1 elementos (${peliculas.length})</h2>`)
+
+//modificar los elementos del array
+peliculas[7] = 'El padrino 1';
+mostrarPeliculas(`modificamos un elemento (${peliculas.length})`)
+
+//borrar elementos del array
+peliculas.shift();
+mostrarPeliculas(`- un elemento (${peliculas.length})`)
+
+peliculas.splice(7,1);
+// peliculas.splice(2,3);
+// peliculas.splice(2); //borro todos los elementos desde la posicion 2
+
+document.write(`<h2>Lista de peliculas - un elemento (${peliculas.length})</h2>`)
+document.write(`</ul>`)
+for(let i = 0; i < peliculas.length; i++){
+        document.write(`<li>${peliculas[i]}</li>`)
+    }
+    document.write(`</ul>`)
+
+peliculas.pop();
+
+
+document.write(`<h2>Lista de peliculas - un elemento (${peliculas.length})</h2>`)
+document.write(`</ul>`)
+for(let i = 0; i < peliculas.length; i++){
+        document.write(`<li>${peliculas[i]}</li>`)
+    }
+    document.write(`</ul>`)
+    
