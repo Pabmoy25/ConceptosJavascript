@@ -19,6 +19,7 @@ function saludoCompleto(nombreIngresado, apellidoIngresado){
 //     return resultado;
 // }
 
+/* Funciones en forma de flecha */
 const multiplicar = (numero1, numero2) =>{
     const resultado = numero1 * numero2;
     console.log(resultado);
@@ -42,4 +43,5 @@ const respuesta = multiplicar(5,3);
 
 document.write(`<p>La respuesta de la funcion que multiplica es ${respuesta}</p>`);
 document.write(`<p>La respuesta de la funcion que multiplica es ${multiplicar(7,3)}</p>`);
+
 
