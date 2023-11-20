@@ -80,10 +80,24 @@ mostrarPelisNuevas(peliculasIronman, `Peliculas de Iroman`);
 
 // para busquedas de un elemento del array, usar el metodo find (devuelve solo la primera vez que lo encuentra)
 const peliculaBuscada =  peliculas.find((item)=> item === 'Harry Potter')
-const peliculaBuscada2 =  peliculas.find((item)=> item === 'Batman')
+const peliculaBuscada2 =  peliculas.find((item)=> item === 'Rocky 1')
 console.log (peliculaBuscada);
 document.write (`<p>Pelicula buscada: ${peliculaBuscada}</p>`)
 
 // podría modificar el resultado undefined con if=else, o un operador ternario
-document.write (`<p>Pelicula buscada: ${peliculaBuscada2}</p>`)
+/* if (peliculaBuscada2) !== undefined {
+    document.write (`<p>Pelicula buscada (Batman): ${peliculaBuscada2}</p>`)
+} else {
+    document.write (`<p>Pelicula buscada (Batman): No se encontro la peli buscada</p>`)
+}
+*/
+
+//operador ternario
+// (condicional logico)? el codigo es verdadera la condicion : el codigo si la condicion logica fue falsa;
+const repuestaTernario = (peliculaBuscada2 !== undefined)? peliculaBuscada2 : "No se encontro la pelicula buscada";
+// document.write (`<p>Pelicula buscada (Batman): ${repuestaTernario}</p>`)
+
+//forma mas resumida de hacer un ternario (no hace falta hacer la variable)
+document.write (`<p>Pelicula buscada (Batman): ${(peliculaBuscada2 !== undefined)? peliculaBuscada2 : "No se encontro la pelicula buscada"}</p>`)
+
 
