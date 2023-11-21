@@ -62,6 +62,7 @@ class Pokemon {
     //get y set
   
     //metodos
+    // aqui sucede el polimorfismo
     mostrarDatos() {
       // super().mostrarDatos()
       document.write(`<h2>Pokemon: ${this.nombre} </h2>
@@ -74,6 +75,11 @@ class Pokemon {
           <li>Rareza: ${this.rareza}</li>
           </ul>
           `);
+    }
+    
+    //Este es un metodo nuevo
+    mostrarDatosPokemonLegendario(){
+
     }
   }
   
